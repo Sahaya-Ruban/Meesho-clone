@@ -1,0 +1,627 @@
+
+{% extends 'shop/layouts/main.html' %}
+{% block title %}
+Mobile
+{% endblock title %}
+
+
+{% block contant %}
+
+<!--lowest prices-->
+<!-- <div class="lowestpriceContainer" style="margin-top: 10rem;">
+    <div class="lowestPrice_text">
+        <h1>Lowest Prices </h1>
+        <h1>Best Quality Shopping</h1>
+        <div class="lowestPriceWhay">
+            <div class="lowestPriceItem">
+                <div class="lowestPrice_icon">
+                    <img src="/static/images/truck.jpg">
+                </div>
+                <p>Free Delivery</p>
+            </div>
+
+            <div class="lowestPriceItem">
+                <div class="lowestPrice_icon">
+                    <img src="/static/images/money.jpg">
+                </div>
+                <p>Cash on Delivery</p>
+            </div>
+            <div class="lowestPriceItem">
+                <div class="lowestPrice_icon">
+                    <img src="/static/images/store.jpg">
+                </div>
+                <p>Easy Returns</p>
+            </div>
+        </div>
+
+        <button class="downloadApp_contianer">
+            <div class="downloadAppIcon">
+                <img src="/static/images/playstore.png">
+            </div>
+            <p>Download the Meesho App</p>
+        </button>
+
+    </div>
+    <div class="lowestPrice_image">
+        <img src="/static/images/offer.webp">
+    </div>
+</div>
+
+
+
+<div class="topCategoriesFrom">
+    <div class="topCategoriesHeading">
+        <span class="horizontalLine"></span>
+        <h1>Top Categories to choose from</h1>
+        <span class="horizontalLine"></span>
+    </div>
+    <div class="topCategoreisImage">
+        <img src="/static/images/women_stores.webp">
+        <img src="/static/images/men_stores.webp">
+        <img src="/static/images/Kids_stores.webp">
+    </div>
+
+    <div class="essentialContaienr">
+        <img src="/static/images/viewall.webp" class="essen-btn">
+
+        <div class="essential_item">
+            <img src="/static/images/home.webp">
+            <img src="/static/images/home_decor.webp">
+        </div>
+
+        <div class="essential_item" id="essential_item">
+            <img src="/static/images/kitchen.webp">
+            <img src="/static/images/kitchen_appliances.webp">
+        </div>
+
+        <div class="essential_item" id="essential_item">
+            <img src="/static/images/health.webp">
+            <img src="/static/images/health_care.webp">
+        </div>
+
+    </div>
+
+
+    <div class="becomesellerBanner_Container">
+        <img src="/static/images/reseller.webp" class="becomesellerBanner">
+        <div class="becomeSeller_Content">
+            <div class="becomeSeller_content_content">
+                <h2>Become a Seller and </h2>
+                <h1>Start your Online Business
+                    with Zero Investment</h1>
+                <div class=" becomerSeller_appDownload_container">
+                    <a href="#" class="becomerSeller_appDownload">
+                        <img src="/static/images/playbutton.webp">
+                    </a>
+                    <a href="#" class="becomerSeller_appDownload">
+                        <img src="/static/images/applebutton.webp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="meesho_supper_container">
+        <img src="/static/images/register.webp">
+        <div class="meesho_supper_container_content">
+            <div class="meesho_supper_container_content_content">
+                <h1>Register as a Meesho Supplier</h1>
+                <p>Sell your products to crores of customers at 0% commission</p>
+                <div class="meesho-suppliear_benifit_container">
+                    <div class="meesho_supper_benifit">
+                      <img class="meeesho_benifit_image" src="/static/images/correct.jpg">
+                      <p>Grow your business 10x</p>
+                    </div>
+                    <div class="meesho_supper_benifit">
+                      <img class="meeesho_benifit_image" src="/static/images/correct.jpg">
+                      <p>Enjoy 100% Profit</p>
+                    </div>
+                    <div class="meesho_supper_benifit">
+                      <img class="meeesho_benifit_image" src="/static/images/correct.jpg">
+                      <p>Sell all over India</p>
+                    </div>
+                </div>
+                <a href="#" class="signup_btn_now">Sign up now</a>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+
+
+
+<div class="product" style="margin-left: 1rem; margin-top:10rem">
+    <div id="product">
+        <p>{{catagory_name}} Products For You</p>
+    </div>
+    <div class="main_img" style="display: flex;">
+      <div class="sort">
+        <div id="sort">
+          <p>Sort by : <strong>Relevance</strong></p> 
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="box">
+          <div class="filter">
+            <div id="filter">
+              <p>FILTERS</p>
+              <P id="pro">1000+ Products</P>
+            </div>
+          </div>
+
+          <div class="category">
+            <div id="category">
+              <p><strong>Category</strong></p>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+          </div>
+          <div class="search_category_input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search"/>
+          </div>
+
+          <div class="table">
+            <table>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Women T-shirts</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Women Tops And Tunics</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Bedsheets</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Bike Covers</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Blouses</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Earrings & Studs</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Hair Accessories</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Hair Oils</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Idols & Figurines</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Jewellery Set</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Kids - Girls Frocks & Dresses</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>Kids Toys</td>
+              </tr>
+            </table>
+            <br>
+            <a href=""><b>Show More</b></a>
+          </div>
+
+          <div class="gender">
+            <div id="gender">
+              <p>Gender</p>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div id="gender1">
+              <p id="gen_p1">Boys</p>
+              <p id="gen_p2">Girls</p>
+              <p id="gen_p3">Men</p>
+            </div>
+            <div id="gender2">
+              <p id="gen_p4">Women</p>
+            </div>
+          </div>
+
+          <div class="color">
+            <div id="color">
+              <p>Color</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down"></i>
+            </div>
+          </div>
+
+          <div class="fabric">
+            <div id="fabric">
+              <p>Fabric</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down1"></i>
+            </div>
+          </div>
+
+          <div class="dail">
+            <div id="dail">
+              <p>Dail Shape</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down2"></i>
+            </div>
+          </div>
+
+          <div class="size">
+            <div id="size">
+              <p>Size</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down3"></i>
+            </div>
+          </div>
+
+          <div class="amount">
+            <div id="amount">
+              <p>Price</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down4"></i>
+            </div>
+          </div>
+
+          <div class="rating">
+            <div id="rating">
+              <p>Rating</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down5"></i>
+            </div>
+          </div>
+
+          <div class="occassion">
+            <div id="occassion">
+              <p>Occassion</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down6"></i>
+            </div>
+          </div>
+
+          <div class="kurta">
+            <div id="kurta">
+              <p>Kurta Fabric</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down7"></i>
+            </div>
+          </div>
+
+          <div class="combo">
+            <div id="combo">
+              <p>Combo</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down8"></i>
+            </div>
+          </div>
+
+          <div class="discount">
+            <div id="discount">
+              <p>Discount</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down9"></i>
+            </div>
+          </div>
+
+          <div class="reversible">
+            <div id="reversible">
+              <p>Reversible</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down10"></i>
+            </div>
+          </div>
+
+          <div class="used">
+            <div id="used">
+              <p>Used For</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down11"></i>
+            </div>
+          </div>
+
+          <div class="smart">
+            <div id="smart">
+              <p>Smartcoins</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down12"></i>
+            </div>
+          </div>
+
+          <div class="gold">
+            <div id="gold">
+              <p>Meesho Gold</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down13"></i>
+            </div>
+          </div>
+
+          <div class="mall">
+            <div id="mall">
+              <p>Meesho Mall</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down14"></i>
+            </div>
+          </div>
+
+          <div class="fit">
+            <div id="fit">
+              <p>Fit/ Shape</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down15"></i>
+            </div>
+          </div>
+
+          <div class="material">
+            <div id="material">
+              <p>Material</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down16"></i>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div id="bottom">
+              <p>Bottom Length</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down17"></i>
+            </div>
+          </div>
+
+          <div class="print">
+            <div id="print">
+              <p>Print Or Pattern Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down18"></i>
+            </div>
+          </div>
+
+          <div class="style">
+            <div id="style">
+              <p>Bottom Style</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down19"></i>
+            </div>
+          </div>
+
+          <div class="wear">
+            <div id="wear">
+              <p>Bottomwear Fabric</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down20"></i>
+            </div>
+          </div>
+
+          <div class="ornamentation">
+            <div id="ornamentation">
+              <p>Ornamentation</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down21"></i>
+            </div>
+          </div>
+
+          <div class="type">
+            <div id="type">
+              <p>Bottom Pattern Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down22"></i>
+            </div>
+          </div>
+
+          <div class="border">
+            <div id="border">
+              <p>Border</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down23"></i>
+            </div>
+          </div>
+
+          <div class="surface">
+            <div id="surface">
+              <p>Surface Styling</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down24"></i>
+            </div>
+          </div>
+
+          <div class="back">
+            <div id="back">
+              <p>Back Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down25"></i>
+            </div>
+          </div>
+
+          <div class="top2">
+            <div id="top2">
+              <p>Top Pattern</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down26"></i>
+            </div>
+          </div>
+
+          <div class="inner">
+            <div id="inner">
+              <p>Inner Fabric</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down27"></i>
+            </div>
+          </div>
+
+          <div class="loom">
+            <div id="loom">
+              <p>Loom Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down28"></i>
+            </div>
+          </div>
+
+          <div class="top3">
+            <div id="top3">
+              <p>Top Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down29"></i>
+            </div>
+          </div>
+
+          <div class="brand">
+            <div id="brand">
+              <p>Brand</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down30"></i>
+            </div>
+          </div>
+
+          <div class="model">
+            <div id="model">
+              <p>Compatible Models</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down31"></i>
+            </div>
+          </div>
+
+          <div class="warranty">
+            <div id="warranty">
+              <p>Warranty Period</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down32"></i>
+            </div>
+          </div>
+
+          <div class="waist">
+            <div id="waist">
+              <p>Waist Rise</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down33"></i>
+            </div>
+          </div>
+
+          <div class="bt">
+            <div id="bt">
+              <p>Bottom Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down34"></i>
+            </div>
+          </div>
+
+          <div class="heel">
+            <div id="heel">
+              <p>Heel Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down35"></i>
+            </div>
+          </div>
+
+          <div class="design">
+            <div id="design">
+              <p>Dial Design</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down36"></i>
+            </div>
+          </div>
+
+          <div class="concern">
+            <div id="concern">
+              <p>Concern</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down37"></i>
+            </div>
+          </div>
+
+          <div class="padding">
+            <div id="padding">
+              <p>Padding</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down38"></i>
+            </div>
+          </div>
+
+          <div class="type1">
+            <div id="type1">
+              <p>Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down39"></i>
+            </div>
+          </div>
+
+          <div class="lens">
+            <div id="lens">
+              <p>Lens Material</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down40"></i>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div id="frame">
+              <p>Frame Style</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down41"></i>
+            </div>
+          </div>
+
+          <div class="frame1">
+            <div id="frame1">
+              <p>Frame Type</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down42"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div id="card">
+              <p>Card Slot</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down43"></i>
+            </div>
+          </div>
+
+          <div class="no">
+            <div id="no">
+              <p>No Of Compartments</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down44"></i>
+            </div>
+          </div>
+
+          <div class="base">
+            <div id="base">
+              <p>Base Metal</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down45"></i>
+            </div>
+          </div>
+
+          <div class="frame2">
+            <div id="frame2">
+              <p>Frame Style</p>
+              <i class="fa-solid fa-angle-down" id="fa-angle-down46"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <section class="py-4" style="margin-top: -2.5rem;">
+            <div class="container">
+                <div class="row">
+                {% for item in products %}
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card my-3 image" style="height:28rem;">
+                            <img src="{{item.product_image.url}}" class="card-image-top" alt="Categories">
+                            <a href="{% url 'product_details' catagory_name item.name %}">
+                                <div id="image1_p">
+                                    <p id="p1">{{item.name}} <br> <b>₹ {{item.original_price | stringformat:'d'}}</b> onwards</p>
+                                    <!-- <p id="p2">Free Delivery</p> -->
+                                    <!-- <p id="p3">+{{item.quantity}} More</p> -->
+                                    <div class="star_rate" style="margin-top: 1rem;">
+                                        <p id="p4">3.7 <i class="fa-solid fa-star"></i></p>
+                                        <p id="p5">41977 Reviews</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+
+<!-- <section class="bg-light py-4" style="margin-top: 10rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mb-4">{{catagory_name}} Products</h4>
+                <hr style="border-color: #b8bfc2;">
+            </div>
+
+            {% for item in products %}
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card my-3">
+                    <img src="{{item.product_image.url}}" class="card-image-top" alt="Categories" width="180px" height="200px">
+                    <a href="{% url 'product_details' catagory_name item.name %}">
+                    <div class="card-body">
+                        <h5 class="cart-title text-primary">{{item.name}}</h5>
+                        <p class="cart-text">
+                            <span class="float-start" style="color: red;"><s>Rs.{{item.original_price | stringformat:'d'}}</s></span>
+                            <span class="float-end" style="background-color: green; color:white;">Rs.{{item.selling_price | stringformat:'d'}}</span>
+                        </p>    
+                    </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section> -->
+    
+{% endblock contant %}
+
+    
